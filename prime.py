@@ -31,7 +31,7 @@ def isDivUpToHalf(num, prime_list):
     for i in prime_list[4:]:
         if i <= num/2:
             if num % i == 0:
-                print "%s%s is divisible by 3" % (" " * 44, num, i)
+                print "%s%s is divisible by %s" % (" " * 44, num, i)
                 return True
         else:
             return False
