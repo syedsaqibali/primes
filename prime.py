@@ -8,7 +8,7 @@ def isDiv3(str_num):
     while len(str_num) > 1:
         str_num = str(sum(map(int, list(str_num))))
     if str_num in ["3", "6", "9"]:
-        print "\t\t\t\t\t\t%s is divisible by 3" % (orig_num)
+        print "%s%s is divisible by 3" % (" " * 44, orig_num)
         return True
     else:
         return False
@@ -16,10 +16,10 @@ def isDiv3(str_num):
 def isDiv2_5(str_num):
     last_char = str_num[-1]
     if last_char in ["0", "2", "4", "6", "8"]:
-        print "\t\t\t\t\t\t%s is divisible by 2" % (str_num)
+        print "%s%s is divisible by 2" % (" " * 44, str_num)
         return True
     elif last_char == "5":
-        print "\t\t\t\t\t\t%s is divisible by 5" % (str_num)
+        print "%s%s is divisible by 4" % (" " * 44, str_num)
         return True
     return False
 
@@ -31,7 +31,7 @@ def isDivUpToHalf(num, prime_list):
     for i in prime_list[4:]:
         if i <= num/2:
             if num % i == 0:
-                print "\t\t\t\t\t\t%s is divisible by %s" % (num, i)
+                print "%s%s is divisible by 3" % (" " * 44, num, i)
                 return True
         else:
             return False
