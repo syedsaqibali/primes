@@ -1,7 +1,7 @@
 
 This is a simple python program that I wrote in about 30 minutes. It takes a numerical argument from the command line and calculates all the prime numbers up to and including it.
 
-Here is an example how the program works with a very low argument (15):
+Here is an example of how the program works with a very low argument (15):
 
     $ prime.py 15
     1 is prime. Hardcoded
