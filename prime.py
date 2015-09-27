@@ -19,7 +19,7 @@ def isDiv2_5(str_num):
         print "%s%s is divisible by 2" % (" " * 44, str_num)
         return True
     elif last_char == "5":
-        print "%s%s is divisible by 4" % (" " * 44, str_num)
+        print "%s%s is divisible by 5" % (" " * 44, str_num)
         return True
     return False
 

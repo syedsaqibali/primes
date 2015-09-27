@@ -16,7 +16,7 @@ Here is an example how the program works with a very low argument (15):
                                                 12 is divisible by 2
     13 is prime. Calculated in 0.000005 seconds
                                                 14 is divisible by 2
-                                                15 is divisible by 4
+                                                15 is divisible by 5
     
     
     Done. Found 7 prime numbers below 15 in a total of 0.000058 seconds
