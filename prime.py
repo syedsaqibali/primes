@@ -61,4 +61,4 @@ for i in range(6,target):
     prime_list.append(i)
     print "%s is prime. Calculated in %f seconds" % (i, time.time()-start_time)
 
-print("Found %s prime numbers below %s in a total of %f seconds" % (len(prime_list), target, time.time()-orig_time))
+print("\n\nDone. Found %s prime numbers below %s in a total of %f seconds" % (len(prime_list), target, time.time()-orig_time))
