@@ -44,6 +44,9 @@ except:
 
 i = 6
 prime_list = [1,2,3,5]
+for i in prime_list:
+    print "%s is prime. Hardcoded" % (i)
+
 orig_time = time.time()
 for i in range(6,target):
     i += 1
@@ -56,6 +59,6 @@ for i in range(6,target):
     if isDivUpToHalf(i, prime_list):
         continue
     prime_list.append(i)
-    print "%s is prime. %f seconds" % (i, time.time()-start_time)
+    print "%s is prime. Calculated in %f seconds" % (i, time.time()-start_time)
 
-print("Found %s prime numbers below %s in %f seconds" % (len(prime_list), target, time.time()-orig_time))
+print("Found %s prime numbers below %s in a total of %f seconds" % (len(prime_list), target, time.time()-orig_time))
