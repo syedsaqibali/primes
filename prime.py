@@ -8,7 +8,7 @@ def isDiv3(str_num):
     while len(str_num) > 1:
         str_num = str(sum(map(int, list(str_num))))
     if str_num in ["3", "6", "9"]:
-        print "%s%s is divisible by 3" % (" " * 44, orig_num)
+        print "%s%s is divisible by 3" % (" " * 65, orig_num)
         return True
     else:
         return False
@@ -16,10 +16,10 @@ def isDiv3(str_num):
 def isDiv2_5(str_num):
     last_char = str_num[-1]
     if last_char in ["0", "2", "4", "6", "8"]:
-        print "%s%s is divisible by 2" % (" " * 44, str_num)
+        print "%s%s is divisible by 2" % (" " * 65, str_num)
         return True
     elif last_char == "5":
-        print "%s%s is divisible by 5" % (" " * 44, str_num)
+        print "%s%s is divisible by 5" % (" " * 65, str_num)
         return True
     return False
 
@@ -31,7 +31,7 @@ def isDivUpToHalf(num, prime_list):
     for i in prime_list[4:]:
         if i <= num/2:
             if num % i == 0:
-                print "%s%s is divisible by %s" % (" " * 44, num, i)
+                print "%s%s is divisible by %s" % (" " * 65, num, i)
                 return True
         else:
             return False
@@ -42,13 +42,16 @@ except:
     print "Usage: %s <target_number>" % sys.argv[0]
     sys.exit()
 
-i = 6
+hardcoded_cutoff = 6
 prime_list = [1,2,3,5]
-for i in prime_list:
-    print "%s is prime. Hardcoded" % (i)
+for i in range(1,hardcoded_cutoff+1):
+    if i in prime_list:
+        print "%s is prime. Hardcoded" % (i)
+    else:
+        print "%s%s is not prime. Hardcoded" % (" " * 65, i)
 
 orig_time = time.time()
-for i in range(6,target):
+for i in range(hardcoded_cutoff,target):
     i += 1
     start_time = time.time()
     str_i = str(i)
