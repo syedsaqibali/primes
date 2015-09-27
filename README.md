@@ -1,5 +1,5 @@
 
-This is a simple python program that I wrote in about 30 minutes. It takes a numerical argument from the command line and calculates all the prime numbers below it.
+This is a simple python program that I wrote in about 30 minutes. It takes a numerical argument from the command line and calculates all the prime numbers up to and including it.
 
 Here is an example how the program works with a very low argument (15):
 
@@ -19,4 +19,4 @@ Here is an example how the program works with a very low argument (15):
                                                 15 is divisible by 5
     
     
-    Done. Found 7 prime numbers below 15 in a total of 0.000058 seconds
+    Done. Found 7 prime numbers up to 15 in a total of 0.000058 seconds
